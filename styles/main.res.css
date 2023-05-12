@@ -1,0 +1,49 @@
+@media screen and (min-width: 576px) {
+  /* common styles  */
+  .container {
+    width: 1440px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .data-card {
+    flex-direction: row;
+  }
+  /* card content  */
+  .card-content {
+    flex: 0 0 50%;
+    padding: 4rem;
+    text-align: start;
+  }
+  .card-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    font-family: var(--inter);
+  }
+  .card-text {
+    font: 1.125rem;
+    max-width: 90%;
+    margin-bottom: auto;
+  }
+  .stats-content {
+    flex-direction: row;
+    max-width: 80%;
+  }
+
+  /* card image  */
+  .card-img {
+    min-height: 100%;
+    width: 100%;
+  }
+  .mob-img {
+    display: none;
+  }
+  .desk-img {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+  }
+}

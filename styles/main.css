@@ -1,0 +1,121 @@
+:root {
+  /*! Colors */
+
+  /* Primary */
+
+  --very-dark-blue: hsl(233, 47%, 7%); /*main background*/
+  --dark-desaturated-blue: hsl(244, 38%, 16%); /*card background*/
+  --soft-violet: hsl(277, 64%, 61%); /*accent*/
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%); /*main heading, stats*/
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.75); /*main paragraph*/
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6); /*stat headings*/
+
+  /* font family  */
+
+  --inter: "Inter", sans-serif;
+  --lexend: "Lexend", sans-serif;
+}
+
+/* common styles  */
+
+body {
+  font-family: var(--inter);
+  font-family: var(--lexend);
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--very-dark-blue);
+}
+.container {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* card */
+.card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.data-card {
+  background-color: var(--dark-desaturated-blue);
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+/* card content  */
+.card-content {
+  padding: 2rem;
+  color: var(--White);
+  text-align: center;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-family: var(--inter);
+}
+.violet-text {
+  color: var(--soft-violet);
+}
+.card-text {
+  font-size: 1rem;
+  color: var(--slightly-transparent-white);
+  margin: 0;
+}
+/* stats content  */
+.stats-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.125rem;
+}
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+.stats-counter {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+/* card image  */
+.card-img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+  position: relative;
+}
+.card-img-overlay {
+  position: absolute;
+  background-color: var(--soft-violet);
+  width: 100%;
+  min-height: 100%;
+  inset: 0;
+}
+.desk-img {
+  display: none;
+}
+.mob-img {
+  max-width: 100%;
+  min-height: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+}
